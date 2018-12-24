@@ -1,0 +1,9 @@
+<ul class="list-group" >
+  <li *ngFor="let todo of todos; let i= index"
+  class="list-group-item"> 
+  <button 
+  (click) = "removeTodo(i)"
+  type="button" class="btn btn-danger">Remove</button>
+  {{todo.title}}
+  </li>
+</ul>  
